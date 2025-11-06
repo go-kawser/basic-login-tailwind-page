@@ -1,4 +1,5 @@
-// JavaScript Code
+// JavaScript Code here:
+// ----------------------------------------------------------------------------->
 const state = {
   currentUser: null,
   balance: 1240,
@@ -20,7 +21,6 @@ const state = {
 
 // DOM Elements
 const domElements = {
-  // Navigation
   navLogin: document.getElementById("nav-login"),
   mobileLogin: document.getElementById("mobile-login"),
   bannerLogin: document.getElementById("banner-login"),
@@ -83,7 +83,7 @@ const domElements = {
   navLinks: document.querySelectorAll(".nav-link"),
 };
 
-// Utility Function
+// Utility
 const utils = {
   formatCurrency: (amount) => {
     return new Intl.NumberFormat("en-US", {
@@ -597,7 +597,7 @@ const ui = {
     };
   },
 
-  // Initialize theme
+  // theme
   initTheme: () => {
     const savedTheme = localStorage.getItem("pioneer-bank-theme") || "light";
     state.theme = savedTheme;
@@ -631,7 +631,6 @@ const ui = {
     utils.showToast(`Theme changed to ${theme}`, "info");
   },
 
-  // Initialize intersection observer for section animations
   initScrollAnimations: () => {
     const sections = document.querySelectorAll("section");
 
@@ -884,19 +883,19 @@ const initEventListeners = () => {
     });
   });
 
-  // Initialize transaction UI
+  // transaction UI
   ui.updateTransactionUI();
 };
 
-// Initialize Application
+// Application
 const initApp = () => {
-  // Initialize theme
+  // theme
   ui.initTheme();
 
-  // Initialize event listeners
+  // event listeners
   initEventListeners();
 
-  // Initialize scroll animations
+  // scroll animations
   ui.initScrollAnimations();
   const savedUser = localStorage.getItem("pioneer-bank-user");
   if (savedUser) {
@@ -923,3 +922,5 @@ const initApp = () => {
 };
 
 document.addEventListener("DOMContentLoaded", initApp);
+
+// JS End

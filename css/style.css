@@ -1,3 +1,5 @@
+/* CSS Style */
+/* --------------------------------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
@@ -71,7 +73,7 @@ body {
   font-weight: bold;
 }
 
-/* Navigation link Styles */
+/* Navigation link */
 .nav-link {
   position: relative;
   padding: 8px 16px;
@@ -124,7 +126,7 @@ section.visible {
   transform: translateY(0);
 }
 
-/* Form validation styles */
+/* Form validation */
 .input-error {
   border-color: #ef4444 !important;
   background-color: rgba(239, 68, 68, 0.05);
@@ -308,3 +310,5 @@ section.visible {
     color: black !important;
   }
 }
+
+/* CSS End */
